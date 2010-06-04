@@ -254,8 +254,8 @@ end
 def query_options
   options = {}
   options[:limit] = params[:limit].nil? ? 10 : params[:limit].to_i
-  options[:sort] = [["_id", (params[:descending] == "true" ? 'descending' : 'ascending')]]
-  options[:skip] = params[:skip].nil? ? 0 : params[:skip].to_i
+#  options[:sort] = [["_id", (params[:descending] == "true" ? 'descending' : 'ascending')]]
+#  options[:skip] = params[:skip].nil? ? 0 : params[:skip].to_i
   return options
 end
 

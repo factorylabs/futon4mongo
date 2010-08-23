@@ -21,7 +21,7 @@ require "mongo"
 require "uri"
 require "cgi"
 
-set :public, File.dirname(__FILE__)
+set :public, File.dirname(__FILE__)+"/../"
 
 before do
   content_type "application/json"

@@ -138,6 +138,7 @@ Gem::Specification.new do |s|
      "_utils/style/layout.css",
      "bin/futon4mongo",
      "config.ru",
+     "futon4mongo.gemspec",
      "lib/futon4mongo.rb",
      "lib/futon4mongo/app.rb",
      "test/unit/db_test.rb"
@@ -158,18 +159,15 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<sinatra>, [">= 1.0"])
       s.add_runtime_dependency(%q<mongo>, [">= 1.0.7"])
-      s.add_runtime_dependency(%q<launchy>, ["= 0.3.7"])
       s.add_runtime_dependency(%q<yajl-ruby>, [">= 0.7.7"])
     else
       s.add_dependency(%q<sinatra>, [">= 1.0"])
       s.add_dependency(%q<mongo>, [">= 1.0.7"])
-      s.add_dependency(%q<launchy>, ["= 0.3.7"])
       s.add_dependency(%q<yajl-ruby>, [">= 0.7.7"])
     end
   else
     s.add_dependency(%q<sinatra>, [">= 1.0"])
     s.add_dependency(%q<mongo>, [">= 1.0.7"])
-    s.add_dependency(%q<launchy>, ["= 0.3.7"])
     s.add_dependency(%q<yajl-ruby>, [">= 0.7.7"])
   end
 end

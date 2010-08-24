@@ -1,6 +1,6 @@
 module Futon4Mongo
   class App < Sinatra::Base
-    set :public, File.expand_path("../../", __FILE__)
+    set :public, File.expand_path("../../../", __FILE__)
 
     before do
       content_type "application/json"

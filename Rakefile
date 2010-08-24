@@ -13,6 +13,7 @@ begin
     gem.add_dependency "sinatra", ">= 1.0"
     gem.add_dependency "mongo", ">= 1.0.7"
     gem.add_dependency "launchy", "0.3.7"
+    gem.add_dependency "yajl-ruby", ">= 0.7.7"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
